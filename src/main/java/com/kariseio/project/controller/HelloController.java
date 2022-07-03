@@ -1,15 +1,16 @@
-package com.kariseio.project.springboot.web;
+package com.kariseio.project.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RequiredArgsConstructor
 @RestController
-public class helloController {
+public class HelloController {
     @GetMapping("/hello")
     public String hello() {
         return "hello";
     }
+
 }
